@@ -1,0 +1,237 @@
+
+/* Header styling */
+.header {
+    text-align: center;
+    top: 0;
+    width: 100%;
+    background-color: aqua;
+    padding: 10px;
+    z-index: 1000;
+    border: 2px solid #deb887;
+   
+
+    
+}
+
+/* Navbar styling */
+.navbar {
+    background-color:aqua;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+    font-size: larger;
+    border-radius: 10px;
+    border: 2px solid #343a40;
+    
+    
+
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 40px;
+    
+
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff;
+    font :size 10rem;
+    text-decoration: none;
+}
+
+.navbar-brand:hover {
+    color: #0056b3;
+}
+
+/* Navbar toggler button (for small screens) */
+.navbar-toggler {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background: #343a40;
+    position: relative;
+    display: block;
+}
+
+.navbar-toggler .navbar-toggler-icon::before,
+.navbar-toggler .navbar-toggler-icon::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background: #343a40;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler .navbar-toggler-icon::before {
+    top: -8px;
+}
+
+.navbar-toggler .navbar-toggler-icon::after {
+    top: 8px;
+}
+
+/* Navbar menu */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #343a40;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link.active {
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.25rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    display: none;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+}
+
+.dropdown-item {
+    color: #343a40;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Disabled link */
+.nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* Search form */
+.search-form {
+    display: flex;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+}
+
+.btn-outline-success {
+    border-color: #28a745;
+    color:blue;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color:blue;
+    border:black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f8f9fa;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-menu.show {
+        display: flex;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+    }
+
+}
+.balu{
+    color: blue;
+}
+.chinni{
+    font-size: larger;
+}
+.balu2{
+    color:#deb887;
+}
+.chinni1{
+    font-size:large;
+
+}
+.balu1{
+    color:chartreuse;
+}
+.chinni2{
+    font-size:large;
+}
+.chinni3{
+    color: cornflowerblue;
+}

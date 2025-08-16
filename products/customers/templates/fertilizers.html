@@ -1,0 +1,110 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriMart</title>
+    <link rel="stylesheet" href="{% static 'css/fertilizers.css' %}">
+</head>
+<body class="venkatesh">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <h1 class="header">AgriMart</h1>
+    <section>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">Agri Mart</a>
+                <button class="navbar-toggler" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="{%url 'fertilizers'%}"><i class="fas fa-dot-circle"></i>fertilizers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="{%url 'liquids'%}"><i class="fas fa-dot-circle"></i>liquids</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link  " href="{%url 'powders'%}" role="button"><i class="fas fa-dot-circle"></i>powders
+                              
+                            </a>
+                        </il>
+                        <li class="nav-item">
+                            <a class="nav-link  " href="{%url 'myprofile'%}" aria-disabled="true"><i class="fa fa-user-circle" aria-hidden="true"></i>myprofile</a>
+                        </li>
+                    </ul>
+                    
+                   
+                </div>
+            </div>
+            
+        </nav>
+        <h3>Description:</h3>
+        <div class="venkatesh1"><p>We provide the best fertilizers to enhance your crop yield with high-quality, reliable products. Explore our wide range of fertilizers and choose what suits your farming needs.</p></div>
+
+        <div class="venky">
+
+        <div><img src="{% static 'images/5.jpeg' %}" alt="images">
+        <P>price:300</P></div>
+
+        <div><img src="{% static 'images/6.jpeg' %}" alt="images">
+        <P>price:400</P></div>
+
+        <div><img src="{% static 'images/8.jpeg' %}" alt="images">
+        <P>price:366</P></div>
+
+        <div><img src="{% static 'images/1.jpeg' %}" alt="images">
+        <P>price:450</P></div>
+        
+        <div><img src="{% static 'images/3.jpeg' %}" alt="images">
+        <P>price:1000</P></div>
+
+        <div><img src="{% static 'images/2.jpeg' %}" alt="images">
+        <P>price:500</P></div>
+    </div>
+    <div class="venky1">
+        
+        <div><img src="{% static 'images/11.jpeg' %}" alt="images">
+        <P>price:1000</P></div><br>
+
+        <div><img src="{% static 'images/15.jpeg' %}" alt="images">
+        <P>price:1500</P></div><br>
+
+        <div><img src="{% static 'images/12.jpeg' %}" alt="images">
+        <P>price:1600</P></div><br>
+
+        <div><img src="{% static 'images/13.jpeg' %}" alt="images">
+        <P>price:1750</P></div><br>
+
+        <div><img src="{% static 'images/14.jpeg' %}" alt="images">
+        <P>price:1000</P></div><br>
+
+        <div><img src="{% static 'images/20.jpeg' %}" alt="images">
+        <P>price:1000</P></div><br>
+
+        </div>
+        <div class="venky2">
+            <div><img src="{% static 'images/22.jpeg' %}" alt="images">
+            <P>price:1200</P></div>
+
+            <div><img src="{% static 'images/23.jpeg' %}" alt="images">
+            <P>price:1300</P></div>
+
+            <div><img src="{% static 'images/24.jpeg' %}" alt="images">
+            <P>price:1400</P></div>
+
+            <div><img src="{% static 'images/25.jpeg' %}" alt="images">
+            <P>price:1500</P></div>
+
+            <div><img src="{% static 'images/26.jpeg' %}" alt="images">
+            <P>price:1600</P></div>
+
+            <div><img src="{% static 'images/4.jpeg' %}" alt="images">
+            <P>price:1800</P></div>
+        </div>
+    
+        
+</body>
+</html>
