@@ -10,6 +10,14 @@ pipeline {
                 '''
             }
         }
-
+stage('Install Dependencies') {
+    steps {
+        sh '''
+        . venv/bin/activate
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        '''
+    }
+}
     }
 }
