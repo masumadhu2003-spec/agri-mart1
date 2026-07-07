@@ -19,5 +19,12 @@ stage('Install Dependencies') {
         '''
     }
 }
+ stage('Django Check') {
+            steps {
+                sh '''
+                venv/bin/python manage.py check
+                '''
+            }
+        }
     }
 }
