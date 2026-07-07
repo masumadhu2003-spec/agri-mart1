@@ -1,37 +1,22 @@
-node {
+pipeline {
+    agent any
 
-    stage('Checkout') {
-        checkout scm
-    }
+    stages {
 
-    stage('Create Virtual Environment') {
-        sh '''
-        python3 -m venv venv
-        '''
-    }
+        stage('Git Checkout') {
+            steps {
+                sh 'git clone https://github.com/masumadhu2003-spec/agri-mart1.git'
+            }
+        }
 
-    stage('Install Dependencies') {
-        sh '''
-        . venv/bin/activate
-        pip install -r requirements.txt
-        '''
-    }
+        stage('Create Virtual Environment') {
+            steps {
+                sh '''
+                cd agri-mart1
+                python3 -m venv venv
+                '''
+            }
+        }
 
-    stage('Django Check') {
-        sh '''
-        . venv/bin/activate
-        python manage.py check
-        '''
-    }
-
-    stage('Run Tests') {
-        sh '''
-        . venv/bin/activate
-        python manage.py test
-        '''
-    }
-
-    stage('Build Successful') {
-        echo "Build completed successfully!"
     }
 }
